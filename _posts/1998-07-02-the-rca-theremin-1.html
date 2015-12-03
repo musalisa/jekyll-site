@@ -1,0 +1,63 @@
+---
+layout: post
+status: publish
+published: true
+title: The RCA Theremin - 1
+author:
+  display_name: Reid Welch
+  login: Reid
+  email: rewelch@netscape.com
+  url: ''
+author_login: Reid
+author_email: rewelch@netscape.com
+wordpress_id: 115
+wordpress_url: http://www.prezioso.it/tvox/?p=115
+date: '1998-07-02 16:11:00 +0200'
+date_gmt: '1998-07-02 16:11:00 +0200'
+categories:
+- Stories
+- Technology
+tags:
+- rca theremin
+- Reid Welch
+comments: []
+---
+<p><i>Part 1 of a technical essay about the RCA theremin by Reid Welch.</i></p>
+<p>This is the first of several installments about the RCA theremin. Our goal is to promulgate enough data to enable the skilled amateur to build an RCA equivalent, and to make the circuit less mysterious to the non-technical person.</p>
+<p>Discussion and corrections are most welcome.</p>
+<p>Reid</p>
+<div>***</div>
+<p>Quoted passages are extracted from the 1929 RCA Service Notes. The eighteen page RCA Service Notes are obtainable on the web. I don't happen to know the URL. (Georgio, can you steer us there?)</p>
+<p>The notes have a few errors in the test point voltages and they lack all coil and transformer data. I'll supply the missing data, offering personal observations. But get the Service Notes for the interesting text and cool line drawings of the actual RCA theremin circuit layout. It may look like chaos, but it works!</p>
+<p>"The RCA Theremin is a musical instrument operating entirely on electrical principles and played by the movement of the hands in space. The instrument covers approximately three and one half octaves, the highest note being about 1400 cycles."</p>
+<p>RCA limited the pitch range to 3.5 octaves because if you adjust the circuit much higher the theremin will break out in high-pitched squeals (parasitic oscillations) when you reach for the highest notes.</p>
+<p>The "beat frequency oscillator" the heart of the any "true" theremin. The RCA oscillator, the whole instrument is really Lev's work, as adapted by RCA engineers to suit a trial run of mass produced theremins. Mass production does not mean that the RCA was cheaply made, but rather that manufacturing<br />
+methods then, as now, dictated adoption off-the-shelf parts wherever possible. Parts were of fine commercial quality for their day. The steel chassis, for instance, is extraordinarily heavy, pressed steel. You could drive a truck over it without damage. In those early days practically nothing was cheap. Crude, but not cheap. For instance, the "27" tube, of which there are three in the RCA, retailed at something like $4 in 1929.<br />
+Multiply $4 x 20 times to account for inflation, and it explains why radios of the period were always sold without tubes. In those early days there were no photo-lithographed circuits. No epoxy potted chips. Components were bulky and extravagantly wasteful of heavy, costly materials because cost-accounting had not yet set in. Pounds of copper and iron are still the best way to good tone when cheapness is not the primary consideration.</p>
+<p>Now let's look at the heart of the RCA, its oscillators.</p>
+<p>"...the musical note of the RCA theremin is produced by two oscillators of slightly different frequency beating together. This beat note then amplified by two audio stages."</p>
+<p>The two identical 27-triode tube oscillators run at about 175kHz. This is radio frequency (RF). Unusual compared to other oscillator designs in that Lev's preferred oscillator creates a virtually undistorted high frequency sine wave with no trace of notching or odd order distortion. The output exceeds the cleanliness of my modern signal generator.</p>
+<p>I wonder if such purity matters to a theremin. After all, isn't a theremin all about "distortion"? But there it is, that peculiar oscillator. It is featured in the RCA and in every pre-1939 Lev-built theremin I've seen.<br />
+Here's a constructional description of the RCA oscillator coil.</p>
+<p>Each oscillator consists of a double layer coil of roughly 170uH or 180uH (micro-Henrys) per layer. The layers are wound in opposite directions and the leads brought out at the winding ends. The "former" is nearly the diameter of a paper towel cardboard tube. In fact, a toweling tube makes a good former. I highly recommend and LCR meter for measuring the inductance.<br />
+You will note that inductance varies not only by number of turns, but also with diameter. 80 turns on a toweling tube gives more inductance than 200 turns on a pencil sized stick. But you _can_ wind a coil on a smaller form.</p>
+<p>Presuming you wind on the toweling tube, count roughly 85 turns of #30 enameled wire. Then measure the inductance because it's important to be in the 170uH ballpark. On top of the first layer wind two or three turns of .01" thick book cover cloth (RCA) or fish paper. Masking tape will serve.<br />
+However, about .030" thickness is suggested if you emulate the RCA method.<br />
+Next, wind the second layer of wire on top of the insulating material.<br />
+Given equal turns, the inductance of the top layer will be greater than the first layer because of the increased former diameter. FYI, for least "copper loss" (not really a factor here), the coil winding would be about as long as its diameter is wide. This is not terribly important, but it was RCA and Lev practice. Nor is the wire size critical. In theory, thicker wire is better than thin because DC resistance of wire increases with the temperature rise inside the instrument cabinet. The DC resistance rise in 100 feet of tiny wire in a miniature if coil is much greater than, say, 25 feet of relatively heavy wire in a large, open coil.</p>
+<p>The inductance and the opposing "sense" of our two windings is important. If the connections of either layer are reversed the 27 will not oscillate. If the inductance is too high or too low it may alter the desired pitch range and the bass tone texture. However, inter-layer capacitance, determined by the thickness of the inter-layer wrap, is not terribly critical but it does tie in to inductive coupling of the two layers.</p>
+<p>As the coil and tube oscillate, inductive coupling between the opposing layers results in inductive feedback which forces the grid/plate current excursions into symmetry. This push-pull loose coupling accounts for the low distortion sine wave. This is a great oscillator design.</p>
+<p>Now we have a coil with two leads at each end representing the inner and outer layers. How to hook it into the circuit:</p>
+<p>The inner layer lead of one end (either end) connects to the grid of the 27.<br />
+The outer layer's lead of that same end of the coil connects to the plate of the 27.</p>
+<p>At the other end of the coil the inner lead connects to a 1/4w or greater 5,000 ohm carbon resistor. (The other end of the 5K resistor is soldered to chassis ground. A .5uF capacitor is installed along with the resistor (parallel connected). The outer layer lead hooks to the B+ supply of about 60 volts.</p>
+<p>The RCA power supply provides 60 volts B+ by way of a ten watt wire wound 10,000 ohm dropping resistor between the 190V B+ rail and the two oscillators. The low end of this resistor is bypassed to chassis ground with 2UF of capacitance. Oscillator plate current drops 130V across the resistor.</p>
+<p>Finally, the 27 cathode is grounded to the chassis. 2.5VAC heater leads are attached to the remaining two pins. This completes one of the oscillators...<br />
+almost~!</p>
+<p>As so far described the oscillator would run much too fast- about 600kHz with considerable notch distortion in the output. In order to slow the oscillator to RCA's specified 175kHz and dramatically improve its frequency stability and output purity, add approximately 1100pF (pico Farads) of capacitance ("C") between the grid and plate pins of the 27. Make a portion<br />
+of the total capacitance _adjustable_ in the form of a 50pF compression cap (RCA) or an air cap (the finned "tuner" you see in older radios). While the aggregate capacitance of the tank C and the inter-layer C is critical in the finished instrument, final C tuning is not done until later.</p>
+<p>Mounting: Try to mount the oscillator coils at least five inches apart. Turn one coil on its end or put it at 90 degrees in relation to the other. This minimizes unwanted coupling between the fixed and variable oscillators. The coils can be mounted in any variety of ways including glue. Avoid using ferrous metal mounting brackets inside the coils.</p>
+<p>The instrument chassis can be a piece of wood.</p>
+<p>This completes the basic description of the RCA oscillator. The next installment will explain how to swing the variable oscillator with the wave of a hand, and how to pit the variable oscillator against the fixed oscillator to obtain the beat note. It gets more interesting, I promise~!</p>
+<p>Reid</p>
+<p><span style="font-size: small;">[Copyright 1998 by Reid Welch]</span></p>

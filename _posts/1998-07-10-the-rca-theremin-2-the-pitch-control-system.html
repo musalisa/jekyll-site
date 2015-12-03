@@ -1,0 +1,57 @@
+---
+layout: post
+status: publish
+published: true
+title: The RCA theremin - 2 - The Pitch Control System
+author:
+  display_name: Reid Welch
+  login: Reid
+  email: rewelch@netscape.com
+  url: ''
+author_login: Reid
+author_email: rewelch@netscape.com
+wordpress_id: 114
+wordpress_url: http://www.prezioso.it/tvox/?p=114
+date: '1998-07-10 16:17:00 +0200'
+date_gmt: '1998-07-10 16:17:00 +0200'
+categories:
+- Stories
+- Technology
+tags:
+- rca theremin
+- Reid Welch
+comments: []
+---
+<p><i>The construction and operation of the RCA theremin pitch control circuit.</i></p>
+<p>This installment deals with the construction and operation of the RCA theremin pitch control circuit. The heart of the system is a large "pitch control resonant coil" (PCRC). The PCRC is the tall coil mounted the left side seen when looking into the back of an RCA. It works in conjunction with the pitch antenna as a resonant system controller.</p>
+<p>Operation:</p>
+<p>-The variable oscillator excites the PCRC, which dangles off the oscillator grid, into electrical vibration. Hand position in relation to the pitch antenna alters the resonant frequency of the PCRC. The altered resonant point of the PCRC exerts a drag upon the variable oscillator, making it run a little bit slower.</p>
+<p>By the way, the variable oscillator always runs slower than the fixed oscillator unless the oscillators run at "zero beat". And of course, it is the frequency difference between variable and fixed oscillators that makes the audio frequency beat note.</p>
+<p>Why is a PCRC needed? For instance, my vintage Stout theremin originally ran at 460kHz and played fairly well without any PCRC. The antenna connected to the cathode of a Hartley oscillator. So, then, why not just hang an antenna on the RCA variable oscillator? -Because these low frequency theremins are much more stable. Their low frequency oscillators are more resistant to external disturbances than high frequency oscillators. Hand capacity presented to a theremin pitch antenna is extraordinarily minuscule; far too little capacitance to sufficiently swing the 175kHz variable oscillator and produce adequate beat-note pitch range. For this reason a bigger "lever" than just an antenna is needed. The PCRC is that lever.</p>
+<p>The PCRC "magnifies" hand capacitance enough to affect the 175kHz oscillator by 1,400Hz. 1,400Hz is equivalent to about 3.5 octaves of beat note variation- a variance of less than _one percent_ of 175kHz.<br />
+That may not seem like much change, but it's a lot of "remote control" to achieve from a small fraction of a picoFarad!</p>
+<p>To obtain this 1400Hz of frequency alteration the variable oscillator must be well tuned to the PCRC's natural resonant period. If the two are off-resonance by even 10kHz the pitch range deteriorates.</p>
+<p>PCRC constructional quality is important: If it has little "distributed capacitance" of its own, adding a bit of hand capacitance via the pitch antenna exerts considerable change to the PCRC's natural vibration period. And in turn, the powerfully resonating PCRC pulls down on the variable oscillator speed. An analogy- if the variable oscillator is the dog's tail, then the PCRC is the dog. The pitch antenna is the dog's leash. And we -hope- that the player's hand is the dog's master.<br />
+:^)</p>
+<p>What if the base speed of the variable oscillator is adjusted _too closely_ to the natural period of the PCRC? Won't hand "leverage" then cause even greater effect upon the variable oscillator? Yes. But when the hand gets close to the antenna, the variable oscillator sinks _below_ the PCRC's resonant "peak", and the theremin breaks out in loud squeals. The remedy, as the RCA Service Notes say, is to reduce the tank capacity of _both_ oscillators so they keep their pitch relationship. But the breakdown is owed to the variable oscillator and the PCRC being too closely tuned.</p>
+<p>While touching on the tuning aspect, make note that the PCRC possesses a resonant curve whose slope is determined by combined qualities of inductance, capacitance, resistance and the physical proximity to the cabinet and other parts. Proximity to other objects adds some capacitance to the PCRC, reducing the slope and height of its resonant curve.</p>
+<p>Constructional description of the RCA PCRC and the RCA antenna:</p>
+<p>The antenna is solid brass, nickel plated. 17.5" long by 7/16" diameter.</p>
+<p>The PCRC is comprised of two coils connected electrically in series.<br />
+That is, one hooked after another. The "hot" end connects to the variable oscillator grid. The other end connects to the pitch antenna.<br />
+This large coil, so characteristic of Termen's work, has a smaller "concentrated coil" hidden inside its base. There is a .0022mF capacitor between these two inductances. It is not a tuning device. The capacitor is present to block DC voltage in case the oscillator tube shorts out.</p>
+<p>The large coil is wound with a single layer of #39 B&amp;S gauge(est.)single silk covered enameled wire. There are roughly 1350 turns on the large coil. The overall diameter of the silk and enameled wire is about 8 mils. You can't find this wire anymore, so plain enameled must be substituted. Choose a gauge that doesn't exceed the original .008" if the original 30mH of inductance is desired, #33 B&amp;S gauge would wind almost the same number of turns per inch. Don't bother to count the turns. Measure the inductance instead.</p>
+<p>The form for large coil is paper/phenolic or Bakelite tubing 3" in diameter by 12" tall. As with the old silk wire, can't get this material anymore. However, a fine substitute is cardboard mailing tube stock approximately the same diameter. If the form is smaller diameter more turns are needed to gain the requisite inductance. The reason why Termen and RCA used large forms is because inductance-per-turn increases with the turns diameter. Again, if a smaller form is employed the turns must be increased.</p>
+<p>The supplementary "concentrated coil" inside the bottom of the big coil is simple enough- a standard air-core lattice-wound RF choke. However, it's not something to wind by hand, and air core chokes are rare today.<br />
+Equivalent modern chokes make-do with fewer turns and a ferrite core to bring up the inductance. The modern RF choke may work OK. As the "concentrated coil", it makes up the inductance that can't fit on the big coil.</p>
+<p>It is undesirable to mount a PCRC horizontally in relation to the pitch antenna. The hand cuts the field radiated from such a PCRC asymmetrically, causing off-center vibrato effects when playing treble notes. This is the Etherwave's layout- apparently dictated by the compact casework.</p>
+<p><b>Always strive to mount a PCRC vertically in line under the pitch antenna</b></p>
+<p>Incorrect polarity of the RCA "concentrated" coil and of RF chokes diminishes pitch range. Small coils are wound in a doughnut shape.<br />
+There is an inner (start) lead and an outer (finish) lead. The outer lead should point to the antenna.</p>
+<p>"Outer-antenna / inner-oscillator" is one way to remember. Even when many coils are connected in series, the "finish" of one coil connects to the "start" of the next coil. The final finish goes to the pitch antenna and the first start connects to the variable oscillator 27 grid.</p>
+<p>The inductance in RCA's large coil is 30mH (milliHenrys). The inductance of RCA's "concentrated coil" is 20mH. They add for a total inductance of 50mH. With the pitch antenna connected the system resonates at about 175kHz (kiloHertz). Your results will vary slightly.</p>
+<p>In summary, this chapter describes Termen's ingenious method for swinging the variable HF theremin oscillator and hints on how to make an RCA-style pitch control resonant coil. The PCRC is set into electrical vibration by the variable oscillator. In so doing the PCRC absorbs energy from the oscillator and radiates a portion of the electromagnetic energy into the player's space. However much this radiation may affect the "magic circle", the primary pitch controlling factor is body capacitance.</p>
+<p>By interposing a large, high quality inductor between the antenna and the oscillator, the effect of hand capacitance is "magnified" and applied to the variable oscillator tank circuit in order to slow its oscillatory period and produce an adequate range of beat notes.</p>
+<p>I'll describe an easy tuning process for the pitch control system in a later chapter.</p>
+<p>Reid</p>
+<p><span style="font-size: small;">[Copyright 1998 by Reid Welch and David Ball]</span></p>
